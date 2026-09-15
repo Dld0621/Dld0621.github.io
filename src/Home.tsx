@@ -50,7 +50,7 @@ export default function Home() {
         <div className="profile-text"><div className="profile-heading"><h1 lang="en">Gangwei <span className="name-ending">(Steven) Li</span></h1>{zh && <p className="name-chinese" lang="zh-Hans">李钢伟</p>}</div><p className="affiliation">{t('MSc(Eng) · Mechanical Engineering', '机械工程硕士')}<br/>{t('The University of Hong Kong', '香港大学')}</p>
           <p>{t('I am an MSc(Eng) student at the University of Hong Kong and a Research Intern in a joint embodied AI research training program with Tsinghua University and Beijing Zhongguancun Academy. I received my BEng from Nantong University.', '我目前在香港大学攻读机械工程硕士，并在清华大学与北京中关村学院联合培养项目中担任具身智能科研实习生。本科毕业于南通大学。')}</p>
           <p>{t('My research experience spans OmniHand retargeting, bimanual teleoperation, and SmolVLA reproduction in LIBERO simulation. I am interested in robot learning and world models for dexterous manipulation.', '我的研究经历涵盖 OmniHand 重定向与双手遥操作，以及 SmolVLA 在 LIBERO 仿真中的复现与评估。未来希望围绕灵巧操作开展机器人学习与世界模型研究。')}</p>
-          <div className="contact-links"><a href="mailto:Steven.LI@connect.hku.hk">Email ↗</a><span>/</span><a href="https://www.linkedin.com/in/gangwei-li" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span className="email-address">Steven.LI@connect.hku.hk</span></div>
+          <div className="contact-links"><a href="mailto:Steven.LI@connect.hku.hk">Email ↗</a><span>/</span><a href="https://www.linkedin.com/in/gangwei-li" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span>/</span><a href="https://github.com/Dld0621" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span className="email-address">Steven.LI@connect.hku.hk</span></div>
         </div>
       </header>
       <main id="main">
