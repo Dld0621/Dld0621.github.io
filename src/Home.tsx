@@ -16,7 +16,7 @@ function ResearchMap({ t }: { t: Translate }) {
 }
 
 function VideoSpace({ t, video = false }: { t: Translate; video?: string | boolean }) {
-  if (video === 'dexterous') return <figure className="project-media dexterous-media"><video controls playsInline preload="metadata" poster="/media/dexterous-manipulation-poster.jpg" aria-label={t('Human-to-robot dexterous manipulation simulation demo', '人手到机器人灵巧操作仿真演示')}><source src="/media/dexterous-manipulation-demo.mp4" type="video/mp4"/>{t('Your browser does not support video playback.', '你的浏览器不支持视频播放。')}</video><figcaption>{t('GRAB → Shadow Hand · MuJoCo · Single-sequence research demo · 20 s · 2.46× playback', 'GRAB → Shadow Hand · MuJoCo · 单序列研究演示 · 20 秒 · 2.46 倍速播放')}</figcaption></figure>;
+  if (video === 'dexterous') return <figure className="project-media dexterous-media"><video controls playsInline preload="metadata" poster="/media/dexterous-manipulation-poster.jpg" aria-label={t('Adaptive retargeting simulation demo', '自适应重定向仿真演示')}><source src="/media/dexterous-manipulation-demo.mp4" type="video/mp4"/>{t('Your browser does not support video playback.', '你的浏览器不支持视频播放。')}</video><figcaption>{t('GRAB → Shadow Hand · MuJoCo · Single-sequence research demo · 20 s · 2.46× playback', 'GRAB → Shadow Hand · MuJoCo · 单序列研究演示 · 20 秒 · 2.46 倍速播放')}</figcaption></figure>;
   if (video === true) return <div className="teleop-media-group">{['OmniHand', 'AGIBOT Yuan Zheng A2'].map(name => <figure className="project-media" key={name}><div className="video-coming-soon"><span className="coming-soon-label">{name}</span><strong>Coming soon</strong><span>{t('Demo video', '演示视频')}</span></div></figure>)}</div>;
   if (video) {
     const vla = video === 'vla';
@@ -33,7 +33,7 @@ export default function Home() {
   useEffect(() => { document.documentElement.lang = zh ? 'zh-Hans' : 'en'; }, [zh]);
   const t: Translate = (en, cn) => zh ? cn : en;
   const projects = [
-    { id: 'dexterous-manipulation', title: t('Human-to-Robot Dexterous Manipulation', '人手到机器人灵巧操作'), meta: t('Research demo · 2026', '研究演示 · 2026'), tags: t('Hand retargeting / Dexterous manipulation / Simulation', '手部重定向 / 灵巧操作 / 仿真'), video: 'dexterous' },
+    { id: 'dexterous-manipulation', title: t('Adaptive Retargeting', '自适应重定向'), meta: t('Research demo · 2026', '研究演示 · 2026'), tags: t('Hand retargeting / Dexterous manipulation / Simulation', '手部重定向 / 灵巧操作 / 仿真'), video: 'dexterous' },
     { id: 'teleoperation', title: t('OmniHand & A2: Retargeting & Bimanual Teleoperation', 'OmniHand 与远征 A2：重定向与双手遥操作'), meta: t('Research internship · 2026', '科研实习 · 2026'), tags: 'Inverse kinematics / ROS 2 / MuJoCo', video: true },
     { id: 'vla', title: t('VLA Reproduction: SmolVLA × LIBERO', 'VLA 复现：SmolVLA × LIBERO'), meta: t('Independent project · 2026', '个人项目 · 2026'), tags: t('Pretrained policy / Closed-loop evaluation / Simulation', '预训练策略 / 闭环评估 / 仿真'), video: 'vla' },
   ];
